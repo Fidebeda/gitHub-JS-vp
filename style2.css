@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, grey, purple);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .input-search{
+    border: 0;
+    background: white;
+    font-size: 20px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+
+    transition: width 0.4s linear;
+
+}
+
+.search{
+    position: relative;
+}
+
+.btn-img{
+    width: 40px;
+}
+
+.btn{
+    border: 0;
+    cursor: pointer;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    transition: transform 0.4s linear;
+}
+
+.btn:focus, .input-search:focus{
+    outline: none;
+}
+
+/* hledej classu search a zároven active kdyby tam byla mezera tak to  znamená hledej uvnitř searche classu active !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.search.active .input-search{
+    width: 150px;
+
+}
+
+.search.active .btn{
+    transform: translateX(150px);
+}
+
+
+

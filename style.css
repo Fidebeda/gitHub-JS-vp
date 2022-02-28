@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* /* background-image: url("img/praha9.webp");
+    background: linear-gradient(purple, black); */
+    background: linear-gradient(rgba(240, 229, 229, 0.9),rgb(218, 154, 218)), url("img/praha12.jpg");
+    
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+#search{
+    display: flex;
+    height: 10vh;
+    width: 10vw;
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    
+    
+    /* background-image: url("img/praha7.jpg"); */
+}
+
+.input-search {
+    /* width: 200%;
+    height: 80%; */
+    height: 70%;
+    /* border: 2px solid blue; */
+    display: none;
+}
+
+#imgS{
+    /* border: 2px solid red; */
+    cursor: pointer;
+}
+
+.active{
+    height: 70%;
+    /* border: 2px solid blue; */
+    display:block;
+    
+}
+
+input::placeholder{
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+
+
+
+
+
+
